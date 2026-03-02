@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Texos | Transporte y Logística Responsable</title>
+    <style>
+        :root {
+            --celeste: #4fb3e8; 
+            --azul-oscuro: #1a5a7a;
+            --blanco: #ffffff;
+            --gris: #f4f4f4;
+        }
+
+        body { font-family: 'Helvetica Neue', Arial, sans-serif; margin: 0; color: #333; line-height: 1.6; }
+        
+        header { 
+            background: var(--blanco); 
+            padding: 10px 5% ; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky; top: 0; z-index: 1000;
+        }
+
+        .logo-box { display: flex; align-items: center; }
+        .logo-box img { height: 50px; margin-right: 10px; }
+        .logo-text { font-size: 24px; font-weight: bold; color: var(--azul-oscuro); letter-weight: 1px; }
+
+        nav a { margin-left: 20px; text-decoration: none; color: var(--azul-oscuro); font-weight: 600; }
+        nav a:hover { color: var(--celeste); }
+
+        .hero { 
+            background: linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)), 
+                        url('https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&w=1200'); 
+            height: 450px; background-size: cover; background-position: center;
+            display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;
+        }
+        .hero h1 { font-size: 2.8rem; color: var(--azul-oscuro); margin-bottom: 0; }
+        .hero p { font-size: 1.2rem; color: #444; }
+
+        .section { padding: 60px 10%; text-align: center; }
+        .about { background: var(--blanco); }
+        .about h2 { color: var(--celeste); font-size: 2rem; }
+        .about p { max-width: 800px; margin: auto; font-size: 1.1rem; color: #555; }
+
+        .services { background: var(--gris); display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .card { background: white; padding: 30px; border-radius: 10px; border-top: 4px solid var(--celeste); }
+
+        .contact { background: var(--azul-oscuro); color: white; }
+        .contact input, .contact textarea { width: 90%; max-width: 400px; margin-bottom: 10px; padding: 12px; border-radius: 5px; border: none; }
+        .btn { background: var(--celeste); color: white; padding: 15px 30px; border: none; border-radius: 5px; font-weight: bold; cursor: pointer; }
+
+        footer { background: #222; color: white; padding: 20px; text-align: center; font-size: 0.8rem; }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo-box">
+        <img src="logo.png" alt="Texos Logo" onerror="this.style.display='none'">
+        <span class="logo-text">TEXOS</span>
+    </div>
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+</header>
+
+<section id="inicio" class="hero">
+    <h1>Logística de Confianza</h1>
+    <p>Conectando rutas con la seguridad que su carga requiere.</p>
+</section>
+
+<section id="nosotros" class="section about">
+    <h2>Quiénes Somos</h2>
+    <p>
+        En <strong>Texos</strong>, nuestro pilar fundamental es un profundo <strong>sentido de responsabilidad</strong>. 
+        Entendemos que cada traslado es un compromiso inquebrantable con la confianza de nuestros clientes y el cumplimiento puntual.
+    </p>
+</section>
+
+<section class="section services">
+    <div class="card">
+        <h3>Puntualidad</h3>
+        <p>Entregas programadas con precisión quirúrgica.</p>
+    </div>
+    <div class="card">
+        <h3>Seguridad</h3>
+        <p>Monitoreo constante y protocolos de alta protección.</p>
+    </div>
+    <div class="card">
+        <h3>Cobertura</h3>
+        <p>Llegamos a donde su empresa necesite estar.</p>
+    </div>
+</section>
+
+<section id="contacto" class="section contact">
+    <h2>Solicite su Cotización</h2>
+    <form>
+        <input type="text" placeholder="Empresa" required><br>
+        <input type="email" placeholder="Email de contacto" required><br>
+        <textarea placeholder="Detalles del transporte" rows="4"></textarea><br>
+        <button type="submit" class="btn">Enviar Solicitud</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2026 Texos Transportes - Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
